@@ -7,7 +7,7 @@
 			{
 				System.out.println();
 			}
-			int n = 5;
+			int n = 9;
 			
 			for(int row1=1;row1<=4*n+3;row1++)
 			{ 
