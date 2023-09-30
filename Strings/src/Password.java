@@ -15,14 +15,14 @@ public class Password {
    public String encryptedPasswordint(int len) {
 	    
 	   String pass = this.givePassword(len);
-	   char pass2[] = new char[len+2];
+	   StringBuilder pass2 = new StringBuilder("");
 	   
 	   for(int i=0 ; i<len+1 ; i++) {
 		   
 		   if(i==0 || i==len) 
-			     pass2[i] = '"';
+			     pass2.append('"');
 		     else	
-		         pass2[i] = pass.charAt(i);
+		         pass2.append(pass.charAt(i));
 	        
 	   }
 	   
