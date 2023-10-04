@@ -6,17 +6,20 @@ public class Government {
     private static Farmer []farmers = new Farmer[100];
     
     
-    public void addToFarmers(Farmer f) {
+    public static void addToFarmers(Farmer f) {
        
        farmers[numberOfFarmers] = f;
        amountDisbursed+=f.loanAmount;
        numberOfFarmers++;
        System.out.println("Added Successfully");
-       Menu menu = new Menu();
-       menu.takeInstruction();
+      
+    }
+
+    public static Farmer[] getAllFarmers() {
+        return farmers;
     }
     
-    public Farmer getFarmer(String name,int age) {
+    public static Farmer getFarmer(String name,int age) {
 
         for(Farmer f : farmers) {
             

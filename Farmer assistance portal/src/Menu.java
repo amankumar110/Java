@@ -158,8 +158,7 @@ public class Menu {
 			   f.loanAmount = loanAmount;
 			   f.termLength = term;
 			   f.setSimpleInterest();
-			   Government g = new Government();
-		        g.addToFarmers(f);
+			   Government.addToFarmers(f);
 			   isValidated = true;
 			   
 		   }
@@ -169,13 +168,13 @@ public class Menu {
 
 	public void showInfo() {
 
-		Government g = new Government();
+		
 		in.nextLine();
 		System.out.println("Enter Your Name");
 		String name = in.nextLine();
 		System.out.println("Enter your age :");
 		int age = in.nextInt();
-		Farmer f = g.getFarmer(name,age);
+		Farmer f = Government.getFarmer(name,age);
 
 		if(f == null) {
 			System.out.println("No Application Was Found");
