@@ -6,6 +6,8 @@ public class Main {
 		Menu menu = new Menu();
 		menu.showLogo();
 		menu.takeInstruction();
+		GovermentEmployee ge = new GovermentEmployee();
+		ge.totalLoanAmount();
         		
 	}
 

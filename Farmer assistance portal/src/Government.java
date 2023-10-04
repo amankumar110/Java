@@ -15,20 +15,21 @@ public class Government {
       
     }
 
-    public static Farmer[] getAllFarmers() {
+    public Farmer[] getAllFarmers() {
         return farmers;
+    }
+
+    public int getTotalLoanAmount() {
+        return this.amountDisbursed;
     }
     
     public static Farmer getFarmer(String name,int age) {
 
-        for(Farmer f : farmers) {
+        for(int i=0;i<numberOfFarmers;i++) {
             
-            if(f.age == age && name.equals(f.name)) {
-                return f;
-            }
-
-           
-                
+            if(farmers[i].age == age && name.equals(farmers[i].name)) {
+                return farmers[i];
+            }   
         }
         return null;
     }

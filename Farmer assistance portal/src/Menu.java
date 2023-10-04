@@ -96,13 +96,19 @@ public class Menu {
 
 		System.out.println(" - Enter 1 for registering.");
 		System.out.println(" - Enter 2 for retrieving information.");
+		System.out.println(" - Enter 3 to exit");
 		System.out.println("Enter Command : ");
 		int option = in.nextInt();
 		
 		if(option == 1) {
 			this.addFarmer();
 		} else if(option==2) 
-		    this.showInfo();
+		   	this.showInfo();
+		else if(option==3)
+			return;
+		else
+			System.out.println(" - Enter valid command!!!");
+
 	}
 	
 	public void addFarmer() {
@@ -161,9 +167,14 @@ public class Menu {
 			   Government.addToFarmers(f);
 			   isValidated = true;
 			   
+		   } else {
+
+			 	System.out.println("Enter loan amount greater than 5000 and less than 80,000");
+				System.out.println("Enter term length 1 year or above");
 		   }
 		   
 		} while(!isValidated);
+		this.takeInstruction();
 	}
 
 	public void showInfo() {
