@@ -6,9 +6,14 @@ public class Main {
 		Menu menu = new Menu();
 		menu.showLogo();
 		menu.takeInstruction();
+<<<<<<< HEAD
 		GovermentEmployee ge = new GovermentEmployee();
 		ge.totalLoanAmount();
         		
+=======
+        GovermentEmployee ge = new GovermentEmployee();
+		ge.totalLoanAmount();
+>>>>>>> withStatic
 	}
 
 }

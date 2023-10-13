@@ -15,12 +15,21 @@ public class Government {
       
     }
 
+<<<<<<< HEAD
     public Farmer[] getAllFarmers() {
         return farmers;
     }
 
     public int getTotalLoanAmount() {
         return this.amountDisbursed;
+=======
+    public  static Farmer[] getAllFarmers() {
+        return farmers;
+    }
+
+    public static int getTotalAmountDisbursed() {
+        return amountDisbursed;
+>>>>>>> withStatic
     }
     
     public static Farmer getFarmer(String name,int age) {

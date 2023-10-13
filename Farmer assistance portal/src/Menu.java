@@ -96,19 +96,29 @@ public class Menu {
 
 		System.out.println(" - Enter 1 for registering.");
 		System.out.println(" - Enter 2 for retrieving information.");
+<<<<<<< HEAD
 		System.out.println(" - Enter 3 to exit");
+=======
+		System.out.println(" - Enter 3 to break;");
+>>>>>>> withStatic
 		System.out.println("Enter Command : ");
 		int option = in.nextInt();
 		
 		if(option == 1) {
 			this.addFarmer();
 		} else if(option==2) 
+<<<<<<< HEAD
 		   	this.showInfo();
 		else if(option==3)
 			return;
 		else
 			System.out.println(" - Enter valid command!!!");
 
+=======
+		    this.showInfo();
+		else if(option==3)
+		    return;
+>>>>>>> withStatic
 	}
 	
 	public void addFarmer() {

@@ -1,5 +1,11 @@
 public class GovermentEmployee {
     
+    
+
+    public GovermentEmployee() {
+        
+    }
+
     public void showAllFarmers() {
             
         final Government g = new Government();
@@ -16,7 +22,11 @@ public class GovermentEmployee {
     }
 
     public void totalLoanAmount() {
+<<<<<<< HEAD
         final Government g = new Government();
         System.out.println("The Total Loan Amount Disbursed Is "+g.getTotalLoanAmount());
+=======
+        System.out.println("The totakl amount of loan disbursed is "+Government.getTotalAmountDisbursed());
+>>>>>>> withStatic
     }
 }
